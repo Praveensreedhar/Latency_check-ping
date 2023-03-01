@@ -35,7 +35,7 @@ for gateway in gateways:
         #line = "Latency,domain=" + str(url) + " latency=" + str(latencyd[0]).strip('[]')
         #line = "Latency,domain=" + str(url) + " latency=" + str(latencyd[0])
         print(line)
-        connect.write([line], {'db': 'GWLATENCYCHECK'}, 204, 'line')
+        connect.write([line], {'db': 'GW_LATENCYCHECK'}, 204, 'line')
         connect.close()
     except influxdb.exceptions.InfluxDBClientError:
         print("No data")
