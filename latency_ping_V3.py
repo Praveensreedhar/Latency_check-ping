@@ -31,7 +31,7 @@ for gateway in gateways:
                                port=8086)
                                 #username='admin',
                                 #password='password'
-        line = "Latency,domain=" + str(host) + " latency=" + str(rtt)
+        line = "Gwlatency,ip=" + str(host) + " latency=" + str(rtt)
         #line = "Latency,domain=" + str(url) + " latency=" + str(latencyd[0]).strip('[]')
         #line = "Latency,domain=" + str(url) + " latency=" + str(latencyd[0])
         print(line)
